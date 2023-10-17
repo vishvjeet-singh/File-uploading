@@ -24,7 +24,7 @@
 				<div class="card mt-3">
 					<div class="card-body">
 
-						<p class="text-center fs-3">Upload Videos </p>
+						<p class="text-center fs-3">Upload Videos</p>
 
 						<%
 						String msg = (String) session.getAttribute("msg");
@@ -63,6 +63,7 @@
 				<tr>
 					<th scope="col">Videos</th>
 					<th scope="col">Remark</th>
+					<th scope="col">Action</th>
 
 				</tr>
 			</thead>
@@ -78,11 +79,14 @@
 					<%-- <th scope="row"><img alt=""
 						src="images/<%=rs.getString("img_name")%>"></th>
 					<td><%=rs.getString("remark")%></td> --%>
-					<th scope="row"> <video width="360" height="250" controls>
-  <source src="images/<%=rs.getString("img_name")%>" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-</video> </th>
+					<th scope="row"><video width="360" height="250" controls>
+							<source src="images/<%=rs.getString("img_name")%>"
+								type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+						</video></th>
 					<td><%=rs.getString("remark")%></td>
+					<td><a href="" class="btn btn-primary btn-sm"> Download</a></td>
+					
 
 
 
