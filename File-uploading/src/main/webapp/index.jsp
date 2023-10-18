@@ -85,7 +85,7 @@
 							<source src="movie.ogg" type="video/ogg">
 						</video></th>
 					<td><%=rs.getString("remark")%></td>
-					<td><a href="" class="btn btn-primary btn-sm"> Download</a></td>
+					<td><a href="download?fn=<%=rs.getString("img_name") %>" class="btn btn-primary btn-sm"> Download</a></td>
 					
 
 
